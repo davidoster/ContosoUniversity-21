@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Course Students";
+    Layout = "~/Areas/CourseStudents/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Course Students</h2>
+
+@{ 
+    <ol>
+        @foreach (var course in ViewBag.CourseStudents)
+        {
+            <li>
+                @course.Course.CourseID @course.Course.Title
+                <div>
+                    <ul>
+                        @foreach (var student in course.Students)
+                        {
+                            <li>@student.FullName</li>
+                        }
+
+                    </ul>
+                </div>
+            </li>
+            
+        }
+    </ol>
+}
