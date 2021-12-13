@@ -30,14 +30,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Students", "Index", "Student")</li>
-                    <li>@Html.ActionLink("Courses", "Index", "Course")</li>
-                    <li>@Html.ActionLink("Course Students", "Index", "CoursesPrivate", new { area = "CourseStudents" }, new { })</li>
-                    <li>@Html.ActionLink("Department Courses", "Index", "DepartmentCourses", new { area = "DepartmentCourses" }, new { })</li>
-                    <li>@Html.ActionLink("Instructors", "Index", "Instructor")</li>
-                    <li>@Html.ActionLink("Departments", "Index", "Department")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { })</li>
+                    <li>@Html.ActionLink("Students", "Index", "Student", new { area = "" }, new { })</li>
+                    <li>@Html.ActionLink("Courses", "Index", "Course", new { area = "" }, new { })</li>
+                    <li>@Html.ActionLink("Instructors", "Index", "Instructor", new { area = "" }, new { })</li>
+                    <li>@Html.ActionLink("Departments", "Index", "Department", new { area = "" }, new { })</li>
+                    <li>@Html.ActionLink("Course Students", "Index", "CoursesPrivate")</li>
+
                 </ul>
             </div>
         </div>
